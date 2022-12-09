@@ -8,19 +8,27 @@
 
 /* Begin PBXBuildFile section */
 		73575606294284D100847794 /* BuySomeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73575605294284D100847794 /* BuySomeApp.swift */; };
-		73575608294284D100847794 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73575607294284D100847794 /* ContentView.swift */; };
+		73575608294284D100847794 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73575607294284D100847794 /* HomeView.swift */; };
 		7357560A294284D300847794 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 73575609294284D300847794 /* Assets.xcassets */; };
 		7357560D294284D300847794 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7357560C294284D300847794 /* Preview Assets.xcassets */; };
 		7357561529428B9500847794 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7357561429428B9500847794 /* LoginView.swift */; };
+		735756172943A6AE00847794 /* QRCodeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 735756162943A6AE00847794 /* QRCodeView.swift */; };
+		735756192943A8D900847794 /* CampaignsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 735756182943A8D900847794 /* CampaignsView.swift */; };
+		7357561B2943A9C000847794 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7357561A2943A9C000847794 /* ProfileView.swift */; };
+		7357561E2943A9FE00847794 /* TabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7357561D2943A9FE00847794 /* TabBar.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		73575602294284D100847794 /* BuySome.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BuySome.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		73575605294284D100847794 /* BuySomeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuySomeApp.swift; sourceTree = "<group>"; };
-		73575607294284D100847794 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		73575607294284D100847794 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		73575609294284D300847794 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7357560C294284D300847794 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		7357561429428B9500847794 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		735756162943A6AE00847794 /* QRCodeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRCodeView.swift; sourceTree = "<group>"; };
+		735756182943A8D900847794 /* CampaignsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CampaignsView.swift; sourceTree = "<group>"; };
+		7357561A2943A9C000847794 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		7357561D2943A9FE00847794 /* TabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBar.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +63,7 @@
 			children = (
 				73575605294284D100847794 /* BuySomeApp.swift */,
 				73575613294288BD00847794 /* Views */,
+				73575609294284D300847794 /* Assets.xcassets */,
 				7357560B294284D300847794 /* Preview Content */,
 			);
 			path = BuySome;
@@ -71,11 +80,22 @@
 		73575613294288BD00847794 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				73575607294284D100847794 /* ContentView.swift */,
+				7357561C2943A9E500847794 /* TabBar */,
+				73575607294284D100847794 /* HomeView.swift */,
 				7357561429428B9500847794 /* LoginView.swift */,
-				73575609294284D300847794 /* Assets.xcassets */,
+				735756162943A6AE00847794 /* QRCodeView.swift */,
+				735756182943A8D900847794 /* CampaignsView.swift */,
+				7357561A2943A9C000847794 /* ProfileView.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		7357561C2943A9E500847794 /* TabBar */ = {
+			isa = PBXGroup;
+			children = (
+				7357561D2943A9FE00847794 /* TabBar.swift */,
+			);
+			path = TabBar;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -149,8 +169,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				7357561529428B9500847794 /* LoginView.swift in Sources */,
-				73575608294284D100847794 /* ContentView.swift in Sources */,
+				73575608294284D100847794 /* HomeView.swift in Sources */,
+				735756172943A6AE00847794 /* QRCodeView.swift in Sources */,
+				735756192943A8D900847794 /* CampaignsView.swift in Sources */,
+				7357561B2943A9C000847794 /* ProfileView.swift in Sources */,
 				73575606294284D100847794 /* BuySomeApp.swift in Sources */,
+				7357561E2943A9FE00847794 /* TabBar.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
