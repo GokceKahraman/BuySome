@@ -11,6 +11,7 @@
 		73575608294284D100847794 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73575607294284D100847794 /* ContentView.swift */; };
 		7357560A294284D300847794 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 73575609294284D300847794 /* Assets.xcassets */; };
 		7357560D294284D300847794 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7357560C294284D300847794 /* Preview Assets.xcassets */; };
+		7357561529428B9500847794 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7357561429428B9500847794 /* LoginView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +20,7 @@
 		73575607294284D100847794 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		73575609294284D300847794 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7357560C294284D300847794 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		7357561429428B9500847794 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,8 +55,6 @@
 			children = (
 				73575605294284D100847794 /* BuySomeApp.swift */,
 				73575613294288BD00847794 /* Views */,
-				73575607294284D100847794 /* ContentView.swift */,
-				73575609294284D300847794 /* Assets.xcassets */,
 				7357560B294284D300847794 /* Preview Content */,
 			);
 			path = BuySome;
@@ -71,6 +71,9 @@
 		73575613294288BD00847794 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				73575607294284D100847794 /* ContentView.swift */,
+				7357561429428B9500847794 /* LoginView.swift */,
+				73575609294284D300847794 /* Assets.xcassets */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -145,6 +148,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7357561529428B9500847794 /* LoginView.swift in Sources */,
 				73575608294284D100847794 /* ContentView.swift in Sources */,
 				73575606294284D100847794 /* BuySomeApp.swift in Sources */,
 			);
