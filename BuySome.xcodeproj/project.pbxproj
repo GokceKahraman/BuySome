@@ -16,6 +16,7 @@
 		735756192943A8D900847794 /* CampaignsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 735756182943A8D900847794 /* CampaignsView.swift */; };
 		7357561B2943A9C000847794 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7357561A2943A9C000847794 /* ProfileView.swift */; };
 		7357561E2943A9FE00847794 /* TabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7357561D2943A9FE00847794 /* TabBar.swift */; };
+		735756202945473700847794 /* Tab.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7357561F2945473700847794 /* Tab.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +30,7 @@
 		735756182943A8D900847794 /* CampaignsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CampaignsView.swift; sourceTree = "<group>"; };
 		7357561A2943A9C000847794 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 		7357561D2943A9FE00847794 /* TabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBar.swift; sourceTree = "<group>"; };
+		7357561F2945473700847794 /* Tab.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tab.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +96,7 @@
 			isa = PBXGroup;
 			children = (
 				7357561D2943A9FE00847794 /* TabBar.swift */,
+				7357561F2945473700847794 /* Tab.swift */,
 			);
 			path = TabBar;
 			sourceTree = "<group>";
@@ -171,6 +174,7 @@
 				7357561529428B9500847794 /* LoginView.swift in Sources */,
 				73575608294284D100847794 /* HomeView.swift in Sources */,
 				735756172943A6AE00847794 /* QRCodeView.swift in Sources */,
+				735756202945473700847794 /* Tab.swift in Sources */,
 				735756192943A8D900847794 /* CampaignsView.swift in Sources */,
 				7357561B2943A9C000847794 /* ProfileView.swift in Sources */,
 				73575606294284D100847794 /* BuySomeApp.swift in Sources */,

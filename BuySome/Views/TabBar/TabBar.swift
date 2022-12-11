@@ -8,31 +8,52 @@
 import SwiftUI
 
 struct TabBar: View {
+//    @State var index = 0
+    @State var selectedTab: Tab = .home
+    
     var body: some View {
-        TabView {
-            HomeView()
-                .tabItem{
-                    Image(systemName: "house")
-                    Text("Ana Sayfa")
+        ZStack(alignment: .bottom){
+            
+            Group{
+                switch selectedTab {
+                case .home:
+                    HomeView()
+                case .qrCode:
+                    QRCodeView()
+                case .campaigns:
+                    CampaignsView()
+                case .profile:
+                    ProfileView()
                 }
-            QRCodeView()
-                .tabItem{
-                    Image(systemName: "qrcode.viewfinder")
-                    Text("QR Kod")
+            }
+            .frame(maxWidth: .infinity, maxHeight: .infinity)
+         
+            HStack{
+                ForEach(tabItems) { item in
+                    Button {
+                        selectedTab = item.tab
+                    } label: {
+                        HStack (spacing: 0){
+                            Image(systemName: item.icon)
+                            Text(item.text)
+                                .font(.caption2)
+                                .lineLimit(1)
+                        }
+                        .frame(maxWidth: .infinity)
+                        .foregroundColor(.cyan)
+                    }
+                    .foregroundStyle(selectedTab == item.tab ? .primary : .secondary)
+                    }
                 }
-            CampaignsView()
-                .tabItem{
-                    Image(systemName: "gift.fill")
-                    Text("Kampanya")
-                }
-            ProfileView()
-                .tabItem{
-                    Image(systemName: "person.crop.circle")
-                    Text("Profil")
-                }
+            .padding(.horizontal, 10)
+            .frame(height: 60, alignment: .center)
+            .cornerRadius(50)
+            .background(.white, in: RoundedRectangle(cornerRadius: 10))
+            .shadow(color: .gray ,radius: 8)
         }
     }
 }
+            
 
 struct TabBar_Previews: PreviewProvider {
     static var previews: some View {
