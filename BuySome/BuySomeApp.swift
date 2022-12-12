@@ -14,7 +14,8 @@ struct BuySomeApp: App {
     
     var body: some Scene {
         WindowGroup {
-            HomeView()
+            TabBar()
+//            HomeView()
                 .environmentObject(sheetManager)
         }
     }

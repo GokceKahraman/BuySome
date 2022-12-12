@@ -24,7 +24,7 @@ struct HomeView: View {
                         .foregroundColor(.white)
                     Spacer()
                     
-                    Button(action: {}, label: {
+                    Button(action: {sheetManager.present()}, label: {
                         HStack{
                             Text("Giriş Yap").underline(pattern: .dash)
                                 .foregroundColor(.white)
@@ -75,14 +75,12 @@ struct HomeView: View {
                     Spacer()
 
                     
-                    
                     Button(action: {sheetManager.present()}, label: {
                         VStack{
                             Image(systemName: "person.circle")
                             Text("Bakiye kazan doya doya harca")
                                 .lineLimit(3)
                                 .multilineTextAlignment(.center)
-                               
                         }
                     })
                     .padding()
