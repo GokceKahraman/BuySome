@@ -17,6 +17,9 @@
 		7357561B2943A9C000847794 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7357561A2943A9C000847794 /* ProfileView.swift */; };
 		7357561E2943A9FE00847794 /* TabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7357561D2943A9FE00847794 /* TabBar.swift */; };
 		735756202945473700847794 /* Tab.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7357561F2945473700847794 /* Tab.swift */; };
+		7357562329462B0C00847794 /* TicketViewRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7357562229462B0C00847794 /* TicketViewRow.swift */; };
+		7357562529462C5B00847794 /* RegisterPopupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7357562429462C5B00847794 /* RegisterPopupView.swift */; };
+		7357562829474C9C00847794 /* SheetManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7357562729474C9B00847794 /* SheetManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +34,9 @@
 		7357561A2943A9C000847794 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 		7357561D2943A9FE00847794 /* TabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBar.swift; sourceTree = "<group>"; };
 		7357561F2945473700847794 /* Tab.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tab.swift; sourceTree = "<group>"; };
+		7357562229462B0C00847794 /* TicketViewRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TicketViewRow.swift; sourceTree = "<group>"; };
+		7357562429462C5B00847794 /* RegisterPopupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterPopupView.swift; sourceTree = "<group>"; };
+		7357562729474C9B00847794 /* SheetManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SheetManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,7 +70,9 @@
 			isa = PBXGroup;
 			children = (
 				73575605294284D100847794 /* BuySomeApp.swift */,
+				7357562129462AB600847794 /* Components */,
 				73575613294288BD00847794 /* Views */,
+				7357562629474C7E00847794 /* Managers */,
 				73575609294284D300847794 /* Assets.xcassets */,
 				7357560B294284D300847794 /* Preview Content */,
 			);
@@ -88,6 +96,7 @@
 				735756162943A6AE00847794 /* QRCodeView.swift */,
 				735756182943A8D900847794 /* CampaignsView.swift */,
 				7357561A2943A9C000847794 /* ProfileView.swift */,
+				7357562429462C5B00847794 /* RegisterPopupView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -99,6 +108,22 @@
 				7357561F2945473700847794 /* Tab.swift */,
 			);
 			path = TabBar;
+			sourceTree = "<group>";
+		};
+		7357562129462AB600847794 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				7357562229462B0C00847794 /* TicketViewRow.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		7357562629474C7E00847794 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				7357562729474C9B00847794 /* SheetManager.swift */,
+			);
+			path = Managers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -171,8 +196,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7357562829474C9C00847794 /* SheetManager.swift in Sources */,
 				7357561529428B9500847794 /* LoginView.swift in Sources */,
+				7357562329462B0C00847794 /* TicketViewRow.swift in Sources */,
 				73575608294284D100847794 /* HomeView.swift in Sources */,
+				7357562529462C5B00847794 /* RegisterPopupView.swift in Sources */,
 				735756172943A6AE00847794 /* QRCodeView.swift in Sources */,
 				735756202945473700847794 /* Tab.swift in Sources */,
 				735756192943A8D900847794 /* CampaignsView.swift in Sources */,

@@ -8,9 +8,16 @@
 import SwiftUI
 
 struct HomeView: View {
+    
+    @EnvironmentObject var sheetManager: SheetManager
+
+    
     var body: some View {
-        ZStack(alignment: .leading){
-            VStack(){
+        ZStack(alignment: .top){
+            Color
+                .mint
+                .ignoresSafeArea()
+            VStack( spacing: 8){
                 HStack{
                     Text("Hoş geldin 👋")
                         .font(.title)
@@ -27,58 +34,106 @@ struct HomeView: View {
                 .padding()
                 
                 HStack{
-                    Button(action: {}, label: {
-                        VStack{
+                    Spacer()
+
+                    Button(action: {sheetManager.present()}, label: {
+                        VStack(spacing: 10){
                             Image(systemName: "person.circle")
                             Text("Üye ol")
-
+                                
                         }
                     })
-                    .font(.body)
-                    .overlay(
-                      RoundedRectangle(cornerRadius: 5)
-                        .stroke(Color.white, lineWidth: 1)
+                    .padding()
+                    .frame(height: 135)
+                    .frame(maxWidth: 120)
+                    .symbolVariant(.fill)
+                    .foregroundColor(.white)
+                    .overlay(RoundedRectangle(cornerRadius: 20)
+                        .stroke(.white, lineWidth: 2)
                     )
-                    .frame(maxWidth: .infinity)
+                    Spacer()
 
                     
-                    Button(action: {}, label: {
-                        VStack{
+                    
+                    Button(action: {sheetManager.present()}, label: {
+                        VStack(spacing: 10){
                             Image(systemName: "person.circle")
                             Text("Mağazadan Alışveriş yap")
                                 .font(.body)
                                 .lineLimit(2)
+                                .multilineTextAlignment(.center)
                         }
                     })
-                    .frame(width: 100, height: 160)
-                    .cornerRadius(10)
+                    .padding()
+                    .frame(height: 135)
+                    .frame(maxWidth: 120)
+                    .symbolVariant(.fill)
+                    .foregroundColor(.white)
+                    .overlay(RoundedRectangle(cornerRadius: 20)
+                        .stroke(.white, lineWidth: 2)
+                    )
+                    Spacer()
 
                     
-                    Button(action: {}, label: {
+                    
+                    Button(action: {sheetManager.present()}, label: {
                         VStack{
                             Image(systemName: "person.circle")
                             Text("Bakiye kazan doya doya harca")
-                                .font(.body)
                                 .lineLimit(3)
+                                .multilineTextAlignment(.center)
+                               
                         }
                     })
-                    .frame(maxWidth: .infinity)
-                    .cornerRadius(10)
+                    .padding()
+                    .frame(height: 135)
+                    .frame(maxWidth: 120)
+                    .symbolVariant(.fill)
+                    .foregroundColor(.white)
+                    .overlay(RoundedRectangle(cornerRadius: 20)
+                        .stroke(.white, lineWidth: 2)
+                    )
+                    Spacer()
 
                 }
-                .frame(height: 170)
-                .padding()
+                
+                           
+
+                VStack(alignment: .center, spacing: 20){
+                    HStack{
+                        TicketViewRow(name: "Süt",itemCount: "0", dividedSymbol: "/", maxCount: "10")
+                    Spacer()
+                        TicketViewRow(name: "Yeşillik",itemCount: "0", dividedSymbol: "/", maxCount: "10")
+                            
+                    }
+                    
+                    HStack{
+                        TicketViewRow(name: "Ekmek",itemCount: "0", dividedSymbol: "/", maxCount: "10")
+                    Spacer()
+                        TicketViewRow(name: "5L Su",itemCount: "0", dividedSymbol: "/", maxCount: "10")
+
+                    }
+                    
+                }
+                Spacer()
             }
             .frame(maxWidth: .infinity, alignment: .leading)
             .padding()
+            
+            .overlay(alignment: .bottom){
+                if sheetManager.action.isPresented{
+                    RegisterPopupView()
+                }
+            }
+
         }
         .edgesIgnoringSafeArea(.bottom)
-        .background(Color(.systemCyan))
     }
 }
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         HomeView()
+            .environmentObject(SheetManager())
     }
 }

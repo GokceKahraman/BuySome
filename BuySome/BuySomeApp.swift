@@ -9,9 +9,13 @@ import SwiftUI
 
 @main
 struct BuySomeApp: App {
+    
+    @StateObject var sheetManager = SheetManager()
+    
     var body: some Scene {
         WindowGroup {
-            TabBar()
+            HomeView()
+                .environmentObject(sheetManager)
         }
     }
 }
